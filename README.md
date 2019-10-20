@@ -2,7 +2,7 @@
 
 _**Aperture** - Video/audio forwarding_
 
-![GitHub contributors](https://img.shields.io/github/contributors/crybapp/aperture) ![GitHub](https://img.shields.io/github/license/crybapp/aperture)
+[![GitHub contributors](https://img.shields.io/github/contributors/crybapp/aperture)](https://github.com/crybapp/aperture/graphs/contributors) [![License](https://img.shields.io/github/license/crybapp/aperture)](https://github.com/crybapp/aperture/blob/master/LICENSE) [![PayPal Donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://paypal.me/williamsthing)
 
 ## Docs
 * [Info](#info)
@@ -14,7 +14,7 @@ _**Aperture** - Video/audio forwarding_
     * [Running the app locally](#running-the-app-locally)
         * [Background services](#background-services)
         * [Starting @cryb/aperture](#starting-@cryb/aperture)
-* [Questions / Issues](#questions-/-issues)
+* [Questions / Issues](#questions--issues)
 
 ## Info
 `@cryb/aperture` is the microservice used to forward video and audio streams from `@cryb/portal` onto clients.
@@ -48,22 +48,13 @@ The following services need to be installed for `@cryb/aperture` to function:
 * MongoDB
 
 We recommend that you run the following services alongside `@cryb/aperture`, but it's not required.
-* `@cryb/api`
 * `@cryb/portal`
 
-You also need to install the required dependencies, by running either:
+You also need to install the required dependencies by running `yarn`.
 
-```
-npm install
-```
-or
-```
-yarn
-```
+Ensure that `.env.example` is either copied and renamed to `.env`, or is simply renamed to `.env`.
 
-Ensure that `.env-example` is either copied and renamed to `.env`, or is simply renamed to `.env`.
-
-In this file, you'll need to supply the environment the app is running in under `NODE_ENV`, the key used to decrypt incoming requests over HTTP and WS, and the URI for MongoDB.
+In this file, you'll need some values. Documentation is available in the `.env.example` file.
 
 ### Running the app locally
 
@@ -73,16 +64,8 @@ Make sure that you have installed MongoDB, and that it is running on port 27017.
 The command to start MongoDB is `mongod`.
 
 #### Starting @cryb/aperture
-To run `@cryb/aperture` in development mode, run either:
-
-```
-npm start
-```
-or
-```
-yarn start
-```
+To run `@cryb/aperture`, run `yarn start`.
 
 ## Questions / Issues
 
-If you have an issues with `@cryb/aperture`, please either open a GitHub issue, or contact a maintainer.
+If you have an issues with `@cryb/aperture`, please either open a GitHub issue, contact a maintainer or join the [Cryb Discord Server](https://discord.gg/ShTATH4) and ask in #tech-support.
